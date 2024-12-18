@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastry Cooking Class Application - Pink & Blue Theme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Pastry Cooking Class Application</h1>
+        <form id="applicationForm" action="submit.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="experience">Experience Level (in years):</label>
+            <input type="number" id="experience" name="experience" min="0" required>
+
+            <label for="favoritePastry">Favorite Pastry:</label>
+            <input type="text" id="favoritePastry" name="favoritePastry" required>
+
+            <label for="preference">Choose Your Favorite Pastry Type:</label>
+            <select id="preference" name="preference" required>
+                <option value="">Select...</option>
+                <option value="Cakes">Cakes</option>
+                <option value="Cupcakes">Cupcakes</option>
+                <option value="Cookies">Cookies</option>
+                <option value="Pastries">Pastries</option>
+            </select>
+
+            <label>Skill Level:</label>
+            <input type="radio" id="beginner" name="skillLevel" value="Beginner" required>
+            <label for="beginner">Beginner</label>
+
+            <input type="radio" id="intermediate" name="skillLevel" value="Intermediate" required>
+            <label for="intermediate">Intermediate</label>
+
+            <input type="radio" id="advanced" name="skillLevel" value="Advanced" required>
+            <label for="advanced">Advanced</label>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
